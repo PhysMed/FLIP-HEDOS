@@ -1,3 +1,7 @@
+# ========= Updated by Chris Beekman et al. 2023 ============
+# ========= Modified by Marina Garcia-Cardosa in February 2024 to include 'walk_v1_fliphedos' =========
+# ========= Last update done in October 2024 by Marina Garcia-Cardosa to enhance and optimize it =========
+
 import numpy as np
 import copy
 
