@@ -1,3 +1,9 @@
+# Under the GNU General Public License v3.0 (GPLv3):
+# Copyright (C) 2026 PhysMed Research Group - University of Navarra
+#
+# This file includes code licensed under the MIT License:
+# Copyright (c) 2023 MGH Radiation Oncology
+#
 # ========= Created by Chris Beekman et al. 2023 ===========
 # ========= Modified by Marina Garcia-Cardosa since January 2024 to manage with data patients =========
 # ========= Last update done in Novemeber 2024 by Marina Garcia-Cardosa to enhance and optimize it =========
