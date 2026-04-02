@@ -1,3 +1,9 @@
+# Under the GNU General Public License v3.0 (GPLv3):
+# Copyright (C) 2026 PhysMed Research Group - University of Navarra
+#
+# This file includes code licensed under the MIT License:
+# Copyright (c) 2021-2023 MGH Radiation Oncology
+#
 # ========= Created by Marina Garcia-Cardosa in January 2024 ============
 # ========= Modified by Marina Garcia-Cardosa:
 #           * July 2024 to manage with proton and photon patients =========
