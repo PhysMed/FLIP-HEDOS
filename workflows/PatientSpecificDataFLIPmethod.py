@@ -1,3 +1,6 @@
+# Under the GNU General Public License v3.0 (GPLv3):
+# Copyright (C) 2026 PhysMed Research Group - University of Navarra
+#
 # ========= Created by Marina Garcia-Cardosa in January 2024 ============
 # ========= Modified by Marina Garcia-Cardosa in July 2024 to manage with proton and photon patients =========
 # ========= Last update done in October 2024 by Marina Garcia-Cardosa to enhance and optimize it =========
