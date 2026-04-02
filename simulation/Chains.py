@@ -1,3 +1,9 @@
+# Under the GNU General Public License v3.0 (GPLv3):
+# Copyright (C) 2026 PhysMed Research Group - University of Navarra
+#
+# This file includes code licensed under the MIT License:
+# Copyright (c) 2021-2023 MGH Radiation Oncology
+#
 # ========= Updated by Chris Beekman et al. 2023 ============
 # ========= Modified by Marina Garcia-Cardosa in February 2024 to include 'walk_v1_fliphedos' =========
 # ========= Last update done in October 2024 by Marina Garcia-Cardosa to enhance and optimize it =========
