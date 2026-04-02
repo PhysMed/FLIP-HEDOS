@@ -1,3 +1,11 @@
+# Under the GNU General Public License v3.0 (GPLv3):
+# Copyright (C) 2026 PhysMed Research Group - University of Navarra
+#
+# This file includes code licensed under the MIT License:
+# Copyright (c) 2021-2023 MGH Radiation Oncology
+#
+# ========= Updated by Chris Beekman et al. 2023 ===========
+# ========= Modified by Marina Garcia-Cardosa since January 2024 to manage with data patients =========
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib
