@@ -1,3 +1,8 @@
+# Under the GNU General Public License v3.0 (GPLv3):
+# Copyright (C) 2026 PhysMed Research Group - University of Navarra
+#
+# ========= Created by Marina Garcia-Cardosa in January 2024 ============
+#
 class Particle:
     def __init__(self, flag=-1, trajectory=None, postraj=None, posspace=None, dose=0, index=None):
         self.Flag = flag
