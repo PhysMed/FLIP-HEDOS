@@ -1,3 +1,6 @@
+# This file includes code licensed under the MIT License:
+# Copyright (c) 2021-2023 MGH Radiation Oncology
+#
 import numpy as np
 from scipy import interpolate
 import pandas as pd
