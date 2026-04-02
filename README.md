@@ -1,5 +1,6 @@
 # FLIP-HEDOS 🩸☢️
 FLow and Irradiation Personalized – HEmatological DOSe
+
 ## Installation
 
 Checkout the python source code
@@ -13,8 +14,6 @@ Install dependent packages
 ```bash
 $ pip install -r requirements.txt
 ```
-
----
 
 ## Clinical and Scientific Background
 **FLIP-HEDOS** is a Python-based implementation that integrates the **FLIP** method (*FLow and Irradiation Personalized*) method
@@ -96,3 +95,16 @@ vessels during proton or photon external beam radiotherapy treatments. *Phys. Me
 68:225007. https://doi.org/10.1088/1361-6560/ad02d6
 - **First pure HEDOS approach** Shin J, et al. HEDOS — a computational tool to assess radiation dose to circulating blood cells during external beam
 radiotherapy based on whole-body blood flow simulations. *Phys. Med. Biol.* 2021; 66:164001. https://doi.org/10.1088/1361-6560/ac16ea
+
+## License
+This project is licensed under the GNU General Public License v3.0 (GPLv3).
+
+Copyright (C) 2026 PhysMed Research Group - University of Navarra
+
+## Third-Party Code
+This project includes code licensed under the MIT License.
+
+- Copyright (c) 2021 MGH Radiation Oncology
+- Copyright (c) 2023 MGH Radiation Oncology
+
+The original MIT-licensed code remains under its original license.
