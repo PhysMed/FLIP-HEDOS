@@ -88,7 +88,7 @@ Results are written to `output/PatientXX/`:
 
 ## Publications
 
-- **FLIP-HEDOS approach** García-Cardosa M, et al. FLIP-HEDOS: a patient-specific blood dose quantification model during radiotherapy treatments. *Under review in Phys. Med. Biol.* 2026.
+- **FLIP-HEDOS approach** García-Cardosa M, et al. FLIP-HEDOS: a patient-specific blood dose quantification model during radiotherapy treatments. *Provisional acceptance in Phys. Med. Biol.* 2026.
 - **Pure FLIP approach** García-Cardosa M, et al. FLIP: a novel method for patient-specific dose quantification in circulating blood in large
 vessels during proton or photon external beam radiotherapy treatments. *Phys. Med. Biol.* 2024; 69:225017. https://doi.org/10.1088/1361-6560/ad8ea5
 - **Second pure HEDOS approach** Beekman C, et al. A stochastic model of blood flow to calculate blood dose during radiotherapy. *Phys. Med. Biol.* 2023;
