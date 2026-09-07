@@ -46,7 +46,12 @@ The calculation of blood dose follows these steps in succession:
 - `FlowModel`: Set up a graph that reflects the connectivity and magnitude of blood flow between compartments (ICRP Publication 89 physiology). Convert this into a matrix of transition probabilities. The FLIP extension inserts the patient-specific arterial and venous modules into this graph.
 - `TemporalDistribution`: Simulate the blood flow over time. Blood particles flow through the model by a stochastic jumping process with Weibull-distributed transit times. When a blood particle enters a FLIP compartment, it follows a blood trajectory through the real vasculature.
 - `CompartmentDose`: Accumulate dose in blood particles over time.
+
 ## Input data
+
+The whole-body compartmental model (**ICRP 89 Excel tables**) are provided in `input/phantom/`:
+- ICRP89_compartment_model.xlsx
+- ICRP89_compartment_model_with_head_neck.xlsx
 
 All patient data must be preprocessed into `.mat` (MATLAB) files:
 
@@ -55,9 +60,15 @@ All patient data must be preprocessed into `.mat` (MATLAB) files:
 - **Temporal structure of the beam delivery** — real beam-on temporal sequence (BEX signal for proton RT; log for photon RT)
 - **Organ DVH files** — per-organ dose-volume histograms from the TPS (`.csv`)
 
-The whole-body compartmental model (ICRP 89 Excel tables) will be provided soon in `input/phantom/`.
+### Test patient
 
-Two trial patients: `Patient19` (thorax-abdomen, proton therapy) and `Patient20` (head-and-neck, proton therapy), will also be provided soon.
+A synthetic test patient (`PatientFake`) is provided in
+`input/patients/PatientFake/` for testing and development purposes.
+
+The data are synthetic and do not correspond to a real patient.
+The DVHs provided for `PatientFake` are intended as a demonstration.
+
+Inside the folder, there is also a `.txt` file containing the information that the user must provide when running `BloodDose.py`.
 
 ## Usage
 
