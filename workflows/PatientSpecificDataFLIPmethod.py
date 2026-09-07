@@ -241,7 +241,7 @@ class Patient:
         self.TrajectoriesInDose = self.PosI = self.PosJ = self.PosK = self.Which = self.dictTraj = self.dictROI = self.NumTrajectories = self.name_trajectories = None
 
     def calculate_prob_enter_trajectories(self, type_trajectory):
-        # Updated October 2024
+        # Last update September 2026
         # it is launched a message about the type of trajectory that has been loaded.
         print(f'Probability of enter in {type_trajectory} trajectories loaded.')
         print('\n')
@@ -272,6 +272,12 @@ class Patient:
         for i in range(len(vel_ini_traj)):
             p = vel_ini_traj[i] / sum_vel
             prob_enter_traj.append(p)
+
+        # Normalize probabilities to avoid decimal precision errors and ensure they sum to 1
+        prob_array = np.array(prob_enter_traj, dtype=np.float64)
+        prob_array = prob_array / np.sum(prob_array)
+
+        prob_enter_traj = prob_array.tolist()
 
         return prob_enter_traj
 
