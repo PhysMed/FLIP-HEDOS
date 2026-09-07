@@ -36,8 +36,6 @@ def plot_dose_distribution(blood_dose_total, dose_contributions, mean_blood_dose
     ax1.legend()
     ax2.legend()
 
-    plt.show()
-
 
 def calculate_dvh_patient_specific(dose_contributions, num_particles, organ):
     dvh_values, bins = np.histogram(dose_contributions[organ], bins=num_particles, density=True)
@@ -48,14 +46,6 @@ def calculate_dvh_patient_specific(dose_contributions, num_particles, organ):
 def plot_dvh(dvh_values, bins, organ):
     line_color = choose_color_plot(organ)
     plt.plot(bins[:-1], dvh_values * 100, linestyle='-', linewidth=1.5, label=organ, color=line_color)
-    plt.title('Dose volume histograms - One fraction')
-    plt.xlabel('Dose (Gy)', fontsize=14)
-    plt.ylabel('Blood volume (%)', fontsize=14)
-    plt.ylim(0, 20)
-    plt.xlim(-0.01, 1)
-    plt.legend()
-    plt.grid(True)
-    plt.show(block=False)
 
 
 def choose_color_plot(organ):
