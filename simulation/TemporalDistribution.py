@@ -332,11 +332,12 @@ class TemporalDistribution:
         plt.xticks(unique_visits)  # Ensure that each number of visits has a mark on the x-axis.
         plt.grid(True, which='both', axis='y', linestyle='--', linewidth=0.4)
 
-        # # In case you want to save the plot, uncomment the following lines:
-        # keep = int(input('Do you want to save the figure? (Yes->1 / No->0): '))
-        # if keep == 1:
-        #     name_figure = input('Write the name of the figure you would like to save: ')
-        #     plt.savefig(name_figure + '.pdf')
+        # In case you don't want to save the plot, comment the following lines:
+        keep = int(input('Do you want to save the BPs visits histogram figure? (Yes->1 / No->0): '))
+        if keep == 1:
+            patient_name = input('Provide the patient name or number (example: Fake/19/4/...): ')
+            name_figure = input('Write the name of the figure you would like to save: ')
+            plt.savefig('output'+'/Patient'+ patient_name + '/' + name_figure + '.pdf')
 
         # It shows the plot
         plt.show(block=False)
