@@ -13,7 +13,7 @@ from workflows import ImportPatientFromMATLAB, TimesFromPatientSpecific, BloodDo
 # Specify your directory...
 directory = '../input/patients'
 print("Selected directory:", directory)
-num_patient = input('Enter the patient number you want to upload: ')
+num_patient = input('Enter the patient number you want to upload: ') # you can also write Fake
 folder = '/Patient' + num_patient
 patient_directory = {
     'directory': directory,
@@ -50,7 +50,11 @@ flip_volume_venous = (volume_venous_compartment * 100) / TBV
 # Depending on the chosen patient organs and organs_DVH is different:
 organs_specific = ['flip_arterial', 'flip_venous']
 # Example of one patient (thorax-abdomen):
-if num_patient == '19':
+if num_patient == 'Fake':
+    organs = ['specific_vasculature', 'aorta', 'inferior_vena_cava', 'liver', 'kidney', 'stomach_oesophagus','spleen']
+    organs_DVH = ['flip_arterial', 'flip_venous', 'aorta', 'inferior_vena_cava', 'liver', 'kidney','stomach_oesophagus', 'spleen']
+# Example of another patient (thorax-abdomen):
+elif num_patient == '19':
     organs = ['specific_vasculature', 'left_heart', 'right_heart', 'aorta', 'inferior_vena_cava', 'liver', 'kidney', 'stomach_oesophagus', 'pancreas']
     organs_DVH = ['flip_arterial', 'flip_venous', 'left_heart', 'right_heart', 'aorta', 'inferior_vena_cava', 'liver', 'kidney', 'stomach_oesophagus', 'pancreas']
 # Example of another patient (head_neck):
@@ -153,4 +157,4 @@ simulation_parameters = {
 }
 
 # ============================================================== #
-BloodDoseFromDVHandPatientSpecific.blood_dose_distribution(simulation_parameters, patient_parameters, treatment_parameters, patient_directory)
+blood = BloodDoseFromDVHandPatientSpecific.blood_dose_distribution(simulation_parameters, patient_parameters, treatment_parameters, patient_directory)
