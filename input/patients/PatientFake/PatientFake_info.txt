@@ -1,0 +1,14 @@
+Enter the patient number you want to upload: >? Fake
+Enter the number of liters per minute you want the CO to have (L): >? 6.5
+Enter the tumor location (thorax-abdomen / head_neck): >? thorax-abdomen
+Enter the arterial FLIP location (aorta / head_neck_arteries): >? aorta
+Enter the venous FLIP location (inferior_vena_cava / head_neck_veins): >? inferior_vena_cava
+Enter the volume of the arterial FLIP compartment (L): >? 0.07
+Enter the volume of the venous FLIP compartment (L): >? 0.05
+Select the treatment modality (proton or photon): >? proton
+Enter the number of treatment fractions (integer): >? 10
+Enter the number of fields/incidents in the treatment (integer): >? 2
+Enter the inter-beam/inter-arc time (integer): >? 50
+Enter the voxel size (mm³): >? 5
+Enter the arterial factor value (integer): >? 1
+Enter the venous factor value (integer): >? 1
