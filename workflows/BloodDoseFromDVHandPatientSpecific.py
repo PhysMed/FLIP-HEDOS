@@ -115,8 +115,18 @@ def blood_dose_distribution(simulation_params, patient_params, treatment_params,
     plt.figure()
     for organ in patient_params['organs']:
         calculate_dvh_patient_specific(dose_contributions, blood.model.patient.NumParticles, organ)
+    plt.title('Dose volume histograms - One fraction')
+    plt.xlabel('Dose (Gy)', fontsize=14)
+    plt.ylabel('Blood volume (%)', fontsize=14)
+    plt.ylim(0, 20)
+    plt.xlim(-0.01, 1)
+    plt.legend()
+    plt.grid(True)
     # Save the figure
     plt.savefig('output' + num_patient + '/BloodDVH_' + day + '.pdf')
+    # Show the figure
+    plt.show(block=False)
+    plt.close()
 
     # It is shown the day and the time in the console message:
     hour_min = datetime.datetime.now().strftime("%H:%M")
@@ -146,8 +156,13 @@ def blood_dose_distribution(simulation_params, patient_params, treatment_params,
         # Save the figure
         plt.savefig('output'+ num_patient +'/BloodContributions_' + day + '.pdf')
         print(f"Blood contributions figure from Patient {num_patient} is saved today {day} at {hour_min}h.")
+        # Show the figure
+        plt.show(block=False)
+        plt.close()
     # ============================================================== #
 
+    return blood
+    
     # ======== Step 5. To save the blood matrix? ============================= #
     # In case you use the python console, is better to remove variables (to not overload python and your computer) before try to save <blood>.
     # delete_variables = input("Do you want to remove all variables except <blood> to proceed with saving the blood matrix?: (True o False): ").strip().lower()
